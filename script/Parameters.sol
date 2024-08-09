@@ -1,0 +1,92 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+contract Parameters {
+    //--------BSC TESTNET PRICE FEED--------//
+    address public constant BTC_PRICE_FEED = 0x5741306c21795FdCBb9b265Ea0255F499DFe515C;
+    address public constant ETH_PRICE_FEED = 0x143db3CEEfbdfe5631aDD3E50f7614B6ba708BA7;
+    address public constant STONE_PRICE_FEED = 0x143db3CEEfbdfe5631aDD3E50f7614B6ba708BA7;
+    address public constant WBNB_PRICE_FEED = 0x2514895c72f50D8bd4B4F9b1110F0D6bD2c97526;
+    address public constant USDC_PRICE_FEED = 0x90c069C4538adAc136E051052E14c1cD799C41B7;
+    address public constant BUSD_PRICE_FEED = 0x9331b55D9830EF609A2aBCfAc0FBCE050A52fdEa;
+
+
+    //-------------ROUTER--------------//
+    address public constant BSC_TESTNET_CCIP_ROUTER = 0xE1053aE1857476f36A3C62580FF9b016E8EE8F6f;
+    address public constant ETHEREUM_SEPOLIA_CCIP_ROUTER = 0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59;
+    address public constant OPTIMISM_SEPOLIA_CCIP_ROUTER = 0x114A20A10b43D4115e5aeef7345a1A71d2a60C57;
+
+
+    //------------CHAIN_SELECTOR------------//
+    uint64 public constant BSC_TESTNET_CHAIN_SELECTOR = 13264668187771770619;
+    uint64 public constant ETHEREUM_SEPOLIA_CHAIN_SELECTOR = 16015286601757825753;
+    uint64 public constant OPTIMISM_SEPOLIA_CHAIN_SELECTOR = 5224473277236331295;
+
+
+    //------------CHAIN_ID------------//
+    uint64 public constant BSC_TESTNET_CHAIN_ID = 97;
+    uint64 public constant ETHEREUM_SEPOLIA_CHAIN_ID = 11155111;
+    uint64 public constant OPTIMISM_SEPOLIA_CHAIN_ID = 11155420;
+
+
+    //---------FUNCTION ROUTER---------//
+    address public constant BSC_TESTNET_FUNCTIONS_ROUTER = 0xb83E47C2bC239B3bf370bc41e1459A34b41238D0;
+    bytes32 public constant BSC_TESTNET_DON_ID = 0x66756e2d657468657265756d2d7365706f6c69612d3100000000000000000000;
+    uint64 public constant FUNCTIONS_SUBSCRIPTION_ID = 8690;
+
+
+    //---------MAIN_ROUTER_CONTRACT_ON_BSC_TESTNET---------//
+    // Need to fix this after deploying the MainRouter contract
+    address public constant BSC_TESTNET_MAIN_ROUTER = 0x86d76dcA88B435E9342F0f8A05523BE89c819F3E; // v4
+
+    //---------AGGREGATOR PRICE_FEED_ON_BSC_TESTNET------------
+
+
+    //---------TOKEN_ON_ETHEREUM_SEPOLIA------------
+    address public constant ETHEREUM_SEPOLIA_WBTC = 0x4aa3B1639d45Cb98a67790b8509E47bD7aa16D2A;
+    address public constant ETHEREUM_SEPOLIA_WETH = 0x9124d3b5DfD072bB2d6cf3e3A59430d2a5D8A55D;
+    address public constant ETHEREUM_SEPOLIA_LINK = 0x31A4Ae750C0e8d477Dd39AF3662F93e69021AA50;
+    address public constant ETHEREUM_SEPOLIA_AVAX = 0xdd36FB413B4470ab5CE67F975c6A2B192e6F84ba;
+    address public constant ETHEREUM_SEPOLIA_UNI = 0x492E85cD024A271C4F19d8B7E9050Ef2bbFeDcCA;
+    address public constant ETHEREUM_SEPOLIA_USDC = 0x65Ae0010421814B1303778Bc82a599f63028d899;
+    address public constant ETHEREUM_SEPOLIA_USDT = 0xB3718E52781F9Fc1C0b72A2966C2616E6d962a1C;
+
+    //---------TOKEN_ON_BSC_TESTNET------------
+    address public constant BSC_TESTNET_WBTC = 0x0804BfEC3ef24bc6CA0eb399D108CC0313d86d9c;
+    address public constant BSC_TESTNET_WETH = 0x51353BFb9fB8baE6d70b896401937C64E96BAcB9;
+    address public constant BSC_TESTNET_LINK = 0x3001d62eBc86ab3A4eF91aFed766BB70182e251c;
+    address public constant BSC_TESTNET_AVAX = 0xD28f8454873CEb4de41d537257044510c3A1d616;
+    address public constant BSC_TESTNET_USDC = 0x620476fe1Bc36a37530b416B7d658024D5966b08;
+    address public constant BSC_TESTNET_USDT = 0xAcA1eA8547E247a3125Da273b16C17Badc4f0812;
+
+    //---------TOKEN_ON_OPTIMISM_SEPOLIA------------
+    address public constant OPTIMISM_SEPOLIA_WBTC = 0xF6905F1E4ad86f8C3a1Ebfca3E04a9e4d2adDD0D;
+    address public constant OPTIMISM_SEPOLIA_WETH = 0x9a24BD7833859d2364EaD5A4aF4b16799693DF12;
+    address public constant OPTIMISM_SEPOLIA_LINK = 0x244ec7F5753b2Fc10d0C2bAaB1AB55850E73a3AB;
+    address public constant OPTIMISM_SEPOLIA_AVAX = 0xe257e2a67407144C918acaD5e11c2582F77c0B1a;
+    address public constant OPTIMISM_SEPOLIA_UNI = 0x32B8F75d2AC926a0a906F24df3e8Fe2bA17Bd80a;
+    address public constant OPTIMISM_SEPOLIA_USDC = 0xDFf5Ba9FCff83cE455e45De7572B6259b0E7D7dE;
+    address public constant OPTIMISM_SEPOLIA_USDT = 0x75b86D7B224Fd88f785BB5FaC5e261D9EFde3047;
+
+    // ---------DEPOSITOR DEPLOYED CONTRACTS---------//
+    address public constant BSC_TESTNET_DEPOSITOR = 0x147953C4eCEC35965e68Cf4e41Db1c6eD106cb95; // v4
+    address public constant ETHEREUM_SEPOLIA_DEPOSITOR = 0x54c8018b25A5F65406eAa90d4B82807fE15f770b; // v4
+    address public constant OPTIMISM_SEPOLIA_DEPOSITOR = 0x3b72037c5c7d211DD45bBFFE051F0CA250405360; // v4
+
+    // ---------MINTER DEPLOYED CONTRACTS---------//
+    address public constant AVALANCHE_FUJI_MINTER = 0x4279b2BdEf33C9D3dff74207083a27eC7Fb91Da6; // v4
+    address public constant ETHEREUM_SEPOLIA_MINTER = 0xC0635604A1Ad786b40A894ecc0bB603CEa53EB85; // v4
+    address public constant ARBITRUM_SEPOLIA_MINTER = 0x7C77dD7CCBC57546f67143bD6E4DD8906Bd66612; // v4
+    address public constant POLYGON_AMOY_MINTER = 0x9559e4655e0b5dD06Ce2fBecAC18C24abB54d0Fb; // v4
+    address public constant BASE_SEPOLIA_MINTER = 0xB31FB97A1220c048FC28f4a0fC530eFeCE59933C; // v4
+    address public constant OPTIMISM_SEPOLIA_MINTER = 0xb50662459Af74dBcF7D12A35462C615cefe446Ee; // v4
+
+    // --------ZXP TOKEN---------//
+    address public constant AVALANCHE_FUJI_DSC = 0x68b0e129B68148A3E3033a8a442b3Bb3FEcD0675;
+    address public constant POLYGON_AMOY_DSC = 0x15c51Cdd0b53789711C43a2d6C624dB20D52086E;
+    address public constant BASE_SEPOLIA_DSC = 0x8a9cdc4D0357b0020fab701C197df3BF9488DFFD;
+    address public constant ARBITRUM_SEPOLIA_DSC = 0x40741D5B50d6c49BD3a073Cc33698765c9e3D3D1;
+    address public constant ETHEREUM_SEPOLIA_DSC = 0x1EB17D754b96eaCea2A7B781f2c35185301BeA29;
+    address public constant OPTIMISM_SEPOLIA_DSC = 0x4136169E17ee05227C73844bf5Ff31291d37ca30;
+}
